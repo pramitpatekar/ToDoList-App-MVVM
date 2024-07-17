@@ -22,7 +22,8 @@ struct AddView: View {
                 TextField("Type something here...", text: $textFieldText)
                     .padding(.leading)
                     .frame(height: 55)
-                    .background(Color.gray.opacity(0.5))
+                    .frame(maxWidth: 800)
+                    .background(Color.gray.opacity(0.3))
                     .cornerRadius(10)
                 
                 Button(action: saveButtonPressed, label: {
@@ -30,9 +31,10 @@ struct AddView: View {
                         .foregroundColor(.white)
                         .font(.headline)
                         .frame(height: 55)
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: 800)
                         .background(Color.accentColor)
                         .cornerRadius(10)
+                        
                         
                 })
             }

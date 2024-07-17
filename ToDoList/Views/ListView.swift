@@ -36,7 +36,7 @@ struct ListView: View {
         .navigationTitle("ToDo List")
         .navigationBarItems(
             leading: EditButton().font(.headline), 
-            trailing: NavigationLink("Add", destination: AddView())
+            trailing: NavigationLink("Add", destination: AddView()).font(.headline)
         )
     }
     
